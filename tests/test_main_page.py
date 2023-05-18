@@ -7,4 +7,4 @@ def test_guest_can_go_to_login_page(browser):
     login_link = browser.find_element(By.CSS_SELECTOR, "#login_link")
     login_link.click()
 
-# pytest -v --tb=line --browser_name="chrome"  --language=en test_main_page.py
+# pytest -v --tb=line --browser_name="Chrome"  --language=en test_main_page.py

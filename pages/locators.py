@@ -18,3 +18,5 @@ class ProductPageLocators:
 
     PRODUCT_PRICE = (By.XPATH, "/html[1]/body[1]/div[2]/div[1]/div[2]/div[2]/article[1]/div[1]/div[2]/p[1]")
     TOTAL_PRICE = (By.XPATH, "/html/body/div[2]/div/div[1]/div[3]/div/p[1]/strong")
+
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "#messages div:nth-child(1)")

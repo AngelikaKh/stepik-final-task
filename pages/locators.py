@@ -5,6 +5,10 @@ class BasePageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
 
+    BASKET_BTN = (By.XPATH, "/html/body/header/div[1]/div/div[2]/span/a")
+    EMPTY_BASKET = (By.CSS_SELECTOR, "#content_inner > p")
+    NOT_EMPTY_BASKET = (By.CLASS_NAME, "basket-items")
+
 
 class LoginPageLocators:
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")

@@ -9,10 +9,17 @@ class BasePageLocators:
     EMPTY_BASKET = (By.CSS_SELECTOR, "#content_inner > p")
     NOT_EMPTY_BASKET = (By.CLASS_NAME, "basket-items")
 
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
+
 
 class LoginPageLocators:
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
     REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
+
+    EMAIL_REG = (By.XPATH, "//input[@id='id_registration-email']")
+    PASSWORD_REG = (By.XPATH, "//input[@id='id_registration-password1']")
+    CONFIRM_PASSWORD = (By.XPATH, "//input[@id='id_registration-password2']")
+    REGISTER_BUTTON = (By.CSS_SELECTOR, "#register_form > button")
 
 
 class ProductPageLocators:

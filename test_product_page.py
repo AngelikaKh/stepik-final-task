@@ -71,26 +71,18 @@ class TestUserAddToBasketFromProductPage:
     def setup(self, browser):
         page = LoginPage(browser, link)
         page.open()
-        print("1")
         page.go_to_login_page()
-        print("2")
         email = str(time.time()) + "@fakemail.org"
-        password = "121094ANZH3LIKA**"
+        password = "323GoodLuck!345**"
         page.register_new_user(email=email, password=password)
-        print("3")
         browser.implicitly_wait(5)
         page.should_be_authorized_user()
-        print("4 /"
-              "end of setup")
 
     def test_user_cant_see_success_message(self, browser):
-        print("starting test_user_cant_see_success_message")
         page = ProductPage(browser, link)
         browser.implicitly_wait(5)
         page.open()
-        print("5")
         page.should_not_be_success_message()
-        print("6")
 
     @pytest.mark.need_review
     def test_user_can_add_product_to_basket(self, browser):
